@@ -48,12 +48,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-captcha.git"
+    "url": "git+https://github.com/Raoul1996/egg-captcha.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/Raoul1996/egg-captcha/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-captcha#readme",
+  "homepage": "https://github.com/Raoul1996/egg-captcha#readme",
   "author": "Raoul1996 <baobaozhou199606@gmail.com>",
   "license": "MIT"
 }
