@@ -20,6 +20,7 @@
 [download-image]: https://img.shields.io/npm/dm/egg-captcha.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-captcha
 
+> captcha plugin for egg framework, based on [ccap](https://www.npmjs.com/package/ccap)
 <!--
 Description here.
 -->
@@ -34,25 +35,50 @@ $ npm i egg-captcha --save
 
 ```js
 // {app_root}/config/plugin.js
+
 exports.captcha = {
   enable: true,
   package: 'egg-captcha',
 };
 ```
-
 ## Configuration
 
 ```js
 // {app_root}/config/config.default.js
-exports.captcha = {
-};
-```
 
+exports.captcha = {
+  width: 256, // set width,default is 256
+  height: 60, // set height,default is 60
+  offset: 40, // set text spacing,default is 40
+  quality: 100, // set pic quality,default is 50
+  fontsize: 57 // set font size,default is 57
+}
+```
 see [config/config.default.js](config/config.default.js) for more detail.
 
 ## Example
 
-<!-- example here -->
+```js
+// {app_root}/controller/user.js
+
+async captcha() {
+  const {ctx, service} = this
+  const {captcha, txt} = await service.user.captcha()
+  ctx.body = captcha
+  ctx.type = 'image/png'
+  // need open the egg-session plugin
+  ctx.session.captcha = txt
+}
+```
+```js
+// {app_root}/service/user.js
+
+async captcha() {
+  const {app} = this
+  const ary = app.captcha.generate()
+  return {captcha: ary[1], txt: ary[0]}
+}
+```
 
 ## Questions & Suggestions
 
