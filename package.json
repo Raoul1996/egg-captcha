@@ -1,6 +1,6 @@
 {
   "name": "egg-captcha",
-  "version": "1.0.2",
+  "version": "1.2.0",
   "description": "captcha plugin for egg, based on c++ lib ccap",
   "eggPlugin": {
     "name": "captcha"
