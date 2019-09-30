@@ -1,7 +1,7 @@
 {
   "name": "egg-captcha",
-  "version": "1.0.1",
-  "description": "captcha plugin for egg, based on ccap lib",
+  "version": "1.0.2",
+  "description": "captcha plugin for egg, based on c++ lib ccap",
   "eggPlugin": {
     "name": "captcha"
   },
@@ -13,15 +13,17 @@
     "captcha"
   ],
   "dependencies": {
+    "@types/ccap": "^0.6.0",
+    "@types/egg": "^1.5.0",
     "ccap": "^0.6.10"
   },
   "devDependencies": {
     "autod": "^3.0.0",
     "autod-egg": "^1.0.0",
-    "egg": "^2.0.0",
-    "egg-bin": "^4.3.0",
-    "egg-ci": "^1.8.0",
-    "egg-mock": "^3.13.0",
+    "egg": "^2.23.0",
+    "egg-bin": "^4.13.2",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
     "eslint": "^4.11.0",
     "eslint-config-egg": "^5.1.0",
     "webstorm-disable-index": "^1.2.0"
