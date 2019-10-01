@@ -24,6 +24,6 @@ describe('test/captcha.test.js', () => {
     return app.httpRequest()
       .get('/captcha')
       .expectHeader('content-type')
-      .except(200)
+      .expect(200);
   });
 });
