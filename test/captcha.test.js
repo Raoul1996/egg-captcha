@@ -20,4 +20,10 @@ describe('test/captcha.test.js', () => {
       .expect('hi, captcha')
       .expect(200);
   });
+  it('should GET /captcha', () => {
+    return app.httpRequest()
+      .get('/captcha')
+      .expectHeader('content-type')
+      .except(200)
+  });
 });

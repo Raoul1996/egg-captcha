@@ -1,6 +1,6 @@
-"use strict";
-const {captcha} = require("../config/config.default");
-const ccap = require("ccap");
+'use strict';
+const { captcha } = require('../../config/config.default');
+const ccap = require('ccap');
 
 class Captcha {
   constructor(option) {

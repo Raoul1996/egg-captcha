@@ -1,6 +1,6 @@
 {
   "name": "egg-captcha",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "captcha plugin for egg, based on c++ lib ccap",
   "eggPlugin": {
     "name": "captcha"
@@ -16,6 +16,7 @@
     "ccap": "^0.6.10"
   },
   "devDependencies": {
+    "@types/egg-mock": "^3.0.4",
     "autod": "^3.1.0",
     "autod-egg": "^1.1.0",
     "egg": "^2.23.0",
@@ -39,9 +40,9 @@
     "autod": "autod"
   },
   "files": [
-    "app.js",
-    "agent.js",
-    "config"
+    "app",
+    "config",
+    "app.js"
   ],
   "ci": {
     "version": "8, 9"

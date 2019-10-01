@@ -1,5 +1,5 @@
 'use strict';
-const Captcha = require('./lib/captcha');
+const Captcha = require('./app/extend/captcha');
 module.exports = app => {
   const captcha = new Captcha({});
   app.captcha = {
