@@ -9,12 +9,12 @@
 
 [npm-image]: https://img.shields.io/npm/v/egg-captcha.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-captcha
-[travis-image]: https://img.shields.io/travis/eggjs/egg-captcha.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-captcha
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-captcha.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/eggjs/egg-captcha?branch=master
-[david-image]: https://img.shields.io/david/eggjs/egg-captcha.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-captcha
+[travis-image]: https://img.shields.io/travis/raoul1996/egg-captcha.svg?style=flat-square
+[travis-url]: https://travis-ci.org/raoul1996/egg-captcha
+[codecov-image]: https://img.shields.io/codecov/c/github/raoul1996/egg-captcha.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/raoul1996/egg-captcha?branch=master
+[david-image]: https://img.shields.io/david/raoul1996/egg-captcha.svg?style=flat-square
+[david-url]: https://david-dm.org/raoul1996/egg-captcha
 [snyk-image]: https://snyk.io/test/npm/egg-captcha/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/egg-captcha
 [download-image]: https://img.shields.io/npm/dm/egg-captcha.svg?style=flat-square
